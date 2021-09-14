@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1b0f49;
+}
+.header-connect-button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #c7f649;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.09px;
+  color: #1d104a;
+  margin-left: auto;
+  display: block;
+}
