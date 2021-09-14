@@ -17,7 +17,7 @@ const Index = () => {
   });
 
   const passportRegex = /^[0-9a-zA-Z]+$/;
-  const nameRegex = /^[a-zA-Z]+$/;
+  const nameRegex = /^[a-zA-Z][a-zA-Z\s]*$/;
 
   const inputHandler = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
@@ -42,6 +42,9 @@ const Index = () => {
       alert(
         `Name: ${inputs.name} passportId: ${inputs.passport} Filename: ${files[0].response.Name} HashKey: ${files[0].response.Hash}`
       );
+      inputs.name = "";
+      inputs.passport = "";
+      window.location.reload();
     }
   };
 
